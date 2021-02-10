@@ -1,0 +1,46 @@
+.button {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -ms-transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  align-self: center;
+  position: relative;
+}
+
+.button span {
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+  font-size: 6rem;
+  padding-right: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+span.clickable:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.1) skewY(-3deg);
+  -webkit-transform: scale(1.1) skewY(-3deg);
+  -moz-transform: scale(1.1) skewY(-3deg);
+  -o-transform: scale(1.1) skewY(-3deg);
+  transform: scale(1.1) skewY(-3deg);
+}
+
+span.optional {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+@media (max-width: 812px) {
+  .button span {
+    font-size: 4rem;
+  }
+  span.optional {
+    font-size: 2.5rem;
+  }
+}

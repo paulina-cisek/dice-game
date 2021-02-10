@@ -1,0 +1,90 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 4rem;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 2.5rem;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.formWrapper div {
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.deleteButton {
+  font-size: 1.2rem;
+  color: #f69b7c;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.skewed {
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.skewed:hover {
+  cursor: pointer;
+  transform: scale(1.1) skewY(3deg);
+  -webkit-transform: scale(1.1) skewY(3deg);
+}
+.outlined {
+  -webkit-text-fill-color: #f5f5f5;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #357e83;
+  -moz-text-fill-color: #f5f5f5;
+  -moz-text-stroke-width: 2px;
+  -moz-text-stroke-color: #357e83;
+}
+
+.playerInput {
+  max-width: 10rem;
+  margin-left: 1rem;
+}
+
+.button {
+  font-size: 4.5rem;
+  transition: all 0.2s ease-in-out;
+  padding: 20px;
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1) skewY(3deg);
+  -webkit-transform: scale(1.1) skewY(3deg);
+  -webkit-text-fill-color: #357e83;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.error {
+  display: block;
+  font-size: 1.6rem;
+  color: #f69b7c;
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    margin-left: -4rem;
+    padding-right: 0;
+  }
+  .formWrapper {
+    font-size: 1.8rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+}

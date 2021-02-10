@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  overflow: scroll;
+  -webkit-box-shadow: inset 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0.5rem;
+  box-sizing: border-box;
+  min-height: 3rem;
+}

@@ -1,0 +1,29 @@
+.scoreBoardRow {
+  font-size: 1.3rem;
+  line-height: 25px;
+}
+
+.scoreBoardRow:hover {
+  cursor: pointer;
+}
+
+.used span:nth-child(1) {
+  text-decoration: line-through;
+}
+.used:hover {
+  cursor: default;
+}
+
+.selected {
+  color: #357e83;
+}
+
+.updated {
+  color: #f69b7c;
+}
+
+@media (min-width: 750px) {
+  .scoreBoardRow {
+    font-size: 1.7rem;
+  }
+}

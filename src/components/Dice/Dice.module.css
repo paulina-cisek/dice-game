@@ -1,0 +1,117 @@
+.wrapper {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: -7px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -7px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -7px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  margin: 0.5rem;
+}
+
+.selected {
+  box-shadow: 8px 8px 16px #357e83, -8px -8px 16px #f3ffff;
+}
+
+.dice {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #dcf3e9, #b9ccc4);
+  box-shadow: 8px 8px 16px #a9bab3, -8px -8px 16px #f3ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.face {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 65px;
+  background: #cee3da;
+  box-shadow: 8px 8px 16px #a9bab3, -8px -8px 16px #f3ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  flex-shrink: 0;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background: #cee3da;
+  box-shadow: inset 8px 8px 16px #357e83, inset -8px -8px 16px #f3ffff;
+}
+.dotWrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  width: 2rem;
+}
+
+.dotColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@keyframes rollAnimation {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+.rolling {
+  -webkit-animation-name: rollAnimation;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 0.5s;
+
+  animation-name: rollAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+@media (min-width: 813px) {
+  .wrapper {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .selected {
+    box-shadow: 8px 8px 16px #357e83, -8px -8px 16px #f3ffff;
+  }
+
+  .dice {
+    height: 5rem;
+    width: 5rem;
+  }
+  .face {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .dot {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+  .dotWrapper {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}

@@ -1,0 +1,10 @@
+export const SELECT_DICE = 'SELECT_DICE';
+export const RESET_DICE = 'RESET_DICE';
+export const ROLL_DICE = 'ROLLED_DICE';
+
+export const ADD_PLAYER = 'ADD_PLAYER';
+export const REMOVE_PLAYER = 'REMOVE_PLAYER';
+export const UPDATE_SCORE = 'UPDATE_SCORE';
+export const UPDATE_SCORE_AND_CHANGE_PLAYER = 'UPDATE_SCORE_AND_CHANGE_PLAYER';
+
+export const START_GAME = 'START_GAME';
