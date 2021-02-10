@@ -6,7 +6,7 @@ This is a dice game, similar to YAHTZEE, where players roll the dice and try to 
 
 ## Demo
 
-You can view the working example [HERE](http://dice-game-demo.paulinacisek.com).
+You can view the working example [HERE](http://demo-dice-game.paulinacisek.com).
 
 ## Technologies
 
