@@ -13,7 +13,7 @@ You can view the working example [HERE](http://dice-game-demo.paulinacisek.com).
 Project is created with:
 
 - React version: 16.13.1 - bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-- React Redux version: 4.0.5
+- React Redux version: 7.2.0
 
 and styled with CSS Modules.
 
